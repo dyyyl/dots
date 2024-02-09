@@ -11,3 +11,7 @@
 # Include fish configuration files.
 !fish/
 !fish/**
+
+# Include kitty configuration files.
+!kitty/
+!kitty/**

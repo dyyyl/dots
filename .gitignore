@@ -5,7 +5,9 @@
 !.gitignore
 
 # Include neovim configuration files.
-!nvim/*
+!nvim/
+!nvim/**
 
 # Include fish configuration files.
-!fish/*
+!fish/
+!fish/**

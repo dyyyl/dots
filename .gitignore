@@ -1,0 +1,11 @@
+# Ignore everything by default.
+*
+
+# The gitignore of this repository itself (!)
+!.gitignore
+
+# Include neovim configuration files.
+!nvim/*
+
+# Include fish configuration files.
+!fish/*

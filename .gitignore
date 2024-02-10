@@ -15,3 +15,7 @@
 # Include kitty configuration files.
 !kitty/
 !kitty/**
+
+# Include snippets.
+!snippets/
+!snippets/**

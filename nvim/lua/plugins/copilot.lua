@@ -1,3 +1,4 @@
+-- Load Copilot plugin
 return {
   "zbirenbaum/copilot.lua",
   cmd = "Copilot",

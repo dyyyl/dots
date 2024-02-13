@@ -1,3 +1,4 @@
+-- Description: Comment plugin configs
 return {
   "numToStr/Comment.nvim",
 

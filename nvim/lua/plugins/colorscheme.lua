@@ -1,3 +1,4 @@
+-- Description: colorscheme plugin configs
 return {
   -- add gruvbox
   -- { "ellisonleao/gruvbox.nvim" },

@@ -1,6 +1,8 @@
+-- Description: LuaSnip plugin configs
 return {
   "L3MON4D3/LuaSnip",
   dependencies = {
+    -- SolidJS snippets
     {
       "solidjs-community/solid-snippets",
       config = function()

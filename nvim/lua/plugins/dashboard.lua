@@ -1,7 +1,9 @@
+-- Description: Dashboard plugin configs
 return {
   "nvimdev/dashboard-nvim",
   event = "VimEnter",
   opts = function()
+    -- This looks squirrely, but I haven't found a better way to do it
     local logo = [[
        ███╗   ███╗ █████╗ ██╗  ██╗███████╗   
        ████╗ ████║██╔══██╗██║ ██╔╝██╔════╝   
@@ -27,6 +29,7 @@ return {
  ╚══════╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝
     ]]
 
+    --TODO: find a better way to center the logo
     logo = string.rep("\n", 10) .. logo .. "\n\n\n"
 
     local opts = {

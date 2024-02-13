@@ -1,6 +1,8 @@
+-- Description: Treesitter plugin configs
 return {
   "nvim-treesitter/nvim-treesitter",
   dependencies = {
+    -- Treesitter autotags for fun and profit
     {
       "windwp/nvim-ts-autotag",
       config = function()
@@ -13,29 +15,5 @@ return {
     indent = { enable = true },
     autotag = { enable = true },
     autopairs = { enable = true },
-    ensure_installed = {
-      "bash",
-      "c",
-      "diff",
-      "html",
-      "javascript",
-      "jsdoc",
-      "json",
-      "jsonc",
-      "lua",
-      "luadoc",
-      "luap",
-      "markdown",
-      "markdown_inline",
-      "python",
-      "query",
-      "regex",
-      "toml",
-      "tsx",
-      "typescript",
-      "vim",
-      "vimdoc",
-      "yaml",
-    },
   },
 }

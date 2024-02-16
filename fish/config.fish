@@ -12,3 +12,6 @@ set -gx JAVA_HOME "/Users/dyyyl/Library/Caches/Coursier/arc/https/github.com/ado
 # >>> coursier install directory >>>
 set -gx PATH "$PATH:/Users/dyyyl/Library/Application Support/Coursier/bin"
 # <<< coursier install directory <<<
+
+# zoxide
+zoxide init fish | source

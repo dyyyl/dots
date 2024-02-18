@@ -1,7 +1,5 @@
 -- Description: colorscheme plugin configs
 return {
-  -- add gruvbox
-  -- { "ellisonleao/gruvbox.nvim" },
   -- add catppuccin
   { "catppuccin/nvim", name = "catppuccin" },
 

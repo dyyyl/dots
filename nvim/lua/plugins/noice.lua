@@ -1,3 +1,4 @@
+-- Description: Noice plugin configs
 return {
   -- https://github.com/folke/noice.nvim
   {

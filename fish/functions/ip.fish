@@ -1,4 +1,4 @@
-function ip --wraps="dig -4 TXT +short o-o.myaddr.l.google.com @ns1.google.com" --description 'Get your IP address'
+function ip --description 'Get your IP address'
     switch $argv[1]
         case public
             dig -4 TXT +short o-o.myaddr.l.google.com @ns1.google.com | tr -d '"'

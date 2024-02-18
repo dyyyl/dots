@@ -4,6 +4,10 @@
 # The gitignore of this repository itself (!)
 !.gitignore
 
+# Include git configuration files.
+!.gitconfig
+!.git_commit_template
+
 # Include neovim configuration files.
 !nvim/
 !nvim/**

@@ -1,3 +1,3 @@
-function ftldr --wraps=complete\ -C\ \|\ fzf\ \|\ xargs\ sh\ -c\ \'tldr\ \' --description alias\ ftldr=complete\ -C\ \|\ fzf\ \|\ xargs\ sh\ -c\ \'tldr\ \'
-    complete -C | fzf | xargs sh -c 'tldr $0'
+function ftldr --wraps="complete -C | fzf --prompt='tldr> ' | awk '{print $1}' | xargs tldr" --description="complete -C | fzf --prompt='tldr> ' | awk '{print $1}' | xargs tldr"
+    complete -C | fzf --prompt='tldr> ' | awk '{print $1}' | xargs tldr
 end

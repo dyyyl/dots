@@ -1,4 +1,4 @@
--- Description: Telescope file browser configs
+-- Description: Telescope file browser plugin configs
 return {
   "nvim-telescope/telescope-file-browser.nvim",
   keys = {

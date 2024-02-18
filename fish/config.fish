@@ -1,4 +1,7 @@
+# Prompt config
 starship init fish | source
+
+# Rust cargo noise
 set PATH $HOME/.cargo/bin $PATH
 
 # bun

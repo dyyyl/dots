@@ -20,6 +20,6 @@
 !kitty/
 !kitty/**
 
-# Include snippets.
-!snippets/
-!snippets/**
+# Include bat configuration files.
+!bat/
+!bat/**

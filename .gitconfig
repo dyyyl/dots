@@ -48,6 +48,15 @@
 [init]
   defaultBranch = main
 
+[transfer]
+  fsckobjects = true
+
+[fetch]
+  fsckobjects = true
+
+[receive]
+  fsckobjects = true
+
 [commit]
   template = ~/.git_commit_template
   verbose = true

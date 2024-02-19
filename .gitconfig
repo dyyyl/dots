@@ -57,6 +57,9 @@
 [receive]
   fsckobjects = true
 
+[branch]
+  sort = -committerdate
+
 [commit]
   template = ~/.git_commit_template
   verbose = true

@@ -27,6 +27,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.formatting.black" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     -- Testing plugins
+    { import = "lazyvim.plugins.extras.test.core" },
+    -- Debugging plugins
     { import = "lazyvim.plugins.extras.dap.core" },
     -- Quality of life plugins
     { import = "lazyvim.plugins.extras.ui.mini-animate" },

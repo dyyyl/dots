@@ -20,7 +20,7 @@ local lazydocker = Terminal:new({
 
 -- Register lazydocker which-key mapping
 wk.register({
-  d = {
+  D = {
     name = "docker",
     d = { "Open Lazydocker" },
   },

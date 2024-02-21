@@ -1,6 +1,9 @@
 # Prompt config
 starship init fish | source
 
+# Go bin path
+set PATH $HOME/go/bin $PATH
+
 # Rust cargo noise
 set PATH $HOME/.cargo/bin $PATH
 

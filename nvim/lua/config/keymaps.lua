@@ -20,13 +20,13 @@ local lazydocker = Terminal:new({
 
 -- Register lazydocker which-key mapping
 wk.register({
-  D = {
-    name = "docker",
+  t = {
+    name = "terminal",
     d = { "Open Lazydocker" },
   },
 }, { prefix = "<leader>" })
 
 -- Keymap for lazydocker
-vim.keymap.set("n", "<leader>dd", function()
+vim.keymap.set("n", "<leader>td", function()
   lazydocker:toggle()
 end, { noremap = true, silent = true })

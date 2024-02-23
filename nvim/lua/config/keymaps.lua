@@ -27,6 +27,6 @@ wk.register({
 }, { prefix = "<leader>" })
 
 -- Keymap for lazydocker
-vim.keymap.set("n", "<leader>td", function()
+vim.keymap.set("n", "<leader>od", function()
   lazydocker:toggle()
 end, { noremap = true, silent = true })

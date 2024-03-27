@@ -7,11 +7,7 @@ return {
     "nvim-tree/nvim-web-devicons",
   },
   config = function()
-    return {
-      -- https://github.com/pwntester/octo.nvim/issues/480#issuecomment-1894798807
-      suppress_missing_scope = {
-        project_v2 = true,
-      },
-    }
+    -- Set up Octo plugin
+    require("octo").setup({})
   end,
 }

@@ -21,3 +21,6 @@ set -gx PATH "$PATH:/Users/dyyyl/Library/Application Support/Coursier/bin"
 
 # zoxide
 zoxide init fish | source
+
+# fzf
+fzf --fish | source

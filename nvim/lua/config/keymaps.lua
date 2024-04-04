@@ -18,11 +18,11 @@ local lazydocker = Terminal:new({
   },
 })
 
--- Register lazydocker which-key mapping
+-- Register which-key mapping for opening programs
 wk.register({
   o = {
     name = "open",
-    d = { "Open Lazydocker" },
+    d = { "Lazydocker" },
   },
 }, { prefix = "<leader>" })
 

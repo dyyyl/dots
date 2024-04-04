@@ -33,6 +33,7 @@ require("lazy").setup({
     -- Quality of life plugins
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.coding.copilot" },
+    { import = "lazyvim.plugins.extras.editor.outline" },
     -- import/override with your plugins
     { import = "plugins" },
   },

@@ -23,3 +23,7 @@
 # Include bat configuration files.
 !bat/
 !bat/**
+
+# Include bottom configuration files.
+!bottom/
+!bottom/**

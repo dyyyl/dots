@@ -8,6 +8,9 @@
 !.gitconfig
 !.git_commit_template
 
+# Include starship configuration file.
+!starship.toml
+
 # Include neovim configuration files.
 !nvim/
 !nvim/**

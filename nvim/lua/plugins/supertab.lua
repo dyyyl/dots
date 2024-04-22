@@ -84,6 +84,10 @@ return {
                 end
               end),
             },
+            -- https://github.com/hrsh7th/nvim-cmp/issues/209#issuecomment-921635222
+            completion = { -- Patch completion options.
+              completeopt = "menu,menuone,noinsert",
+            },
           })
         end,
       },

@@ -23,6 +23,14 @@
 !kitty/
 !kitty/**
 
+# Include alacritty configuration files.
+!alacritty/
+!alacritty/**
+
+# Include zellij configuration files.
+!zellij/
+!zellij/**
+
 # Include bat configuration files.
 !bat/
 !bat/**

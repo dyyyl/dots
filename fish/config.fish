@@ -24,3 +24,9 @@ zoxide init fish | source
 
 # fzf
 fzf --fish | source
+
+# start zellij if not already running
+if set -q ZELLIJ
+else
+    zellij
+end

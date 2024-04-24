@@ -3,7 +3,6 @@ return {
   "nvimdev/dashboard-nvim",
   event = "VimEnter",
   opts = function(_, opts)
-    -- This looks squirrely, but I haven't found a better way to do it
     local logo = [[
        ███╗   ███╗ █████╗ ██╗  ██╗███████╗   
        ████╗ ████║██╔══██╗██║ ██╔╝██╔════╝   
@@ -12,8 +11,8 @@ return {
        ██║ ╚═╝ ██║██║  ██║██║  ██╗███████╗   
        ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   
 
-  
-            ██████╗ ██████╗  ██████╗ ██╗        
+
+           ██████╗ ██████╗  ██████╗ ██╗        
           ██╔════╝██╔═══██╗██╔═══██╗██║        
           ██║     ██║   ██║██║   ██║██║        
           ██║     ██║   ██║██║   ██║██║        
@@ -26,10 +25,9 @@ return {
       ███████╗   ██║   ██║   ██║█████╗  █████╗  
       ╚════██║   ██║   ██║   ██║██╔══╝  ██╔══╝  
       ███████║   ██║   ╚██████╔╝██║     ██║     
- ╚══════╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝
+      ╚══════╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝     
     ]]
 
-    --TODO: find a better way to center the logo
     logo = string.rep("\n", 10) .. logo .. "\n\n\n"
     opts.config.header = vim.split(logo, "\n")
   end,

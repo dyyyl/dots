@@ -4,6 +4,7 @@ import = ["~/.config/alacritty/catppuccin-frappe.toml"]
 [window]
 startup_mode = "Fullscreen"
 padding = { x = 10, y = 10 }
+option_as_alt = "OnlyLeft"
 
 [env]
 TERM = "alacritty"

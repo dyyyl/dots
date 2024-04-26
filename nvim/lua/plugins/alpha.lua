@@ -17,7 +17,7 @@ local palettes = require("utils.alpha.palettes")
 local header
 
 -- TODO: Convert to a switch statement if you add more headers.
-if random == 1 then -- Just pick one or the other.
+if random == 1 then -- Just pick one or the other... for now.
   header = colorize_header(headers.text, palettes.rainbow_text) -- And colorize it accordingly.
 else
   header = colorize_header(headers.earth, palettes.rainbow_earth)

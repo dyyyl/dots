@@ -3,7 +3,8 @@ import = ["~/.config/alacritty/catppuccin-frappe.toml"]
 
 [window]
 startup_mode = "Fullscreen"
-padding = { x = 10, y = 10 }
+padding = { x = 3, y = 3 }
+dynamic_padding = true
 option_as_alt = "OnlyLeft"
 
 [env]
@@ -14,4 +15,4 @@ normal = { family = "Hack Nerd Font Mono", style = "Regular" }
 bold = { style = "Bold" }
 italic = { style = "Italic" }
 bold_italic = { style = "Bold Italic" }
-size = 14.0
+size = 15.0

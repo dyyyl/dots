@@ -46,6 +46,6 @@ local text = {
 }
 
 return {
-  earth,
-  text,
+  earth = earth,
+  text = text,
 }

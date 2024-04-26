@@ -25,6 +25,4 @@ local function colorize_header(header, colors)
   return lines -- Return the table of lines.
 end
 
-return {
-  colorize_header,
-}
+return colorize_header

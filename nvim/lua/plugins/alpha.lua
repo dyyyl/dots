@@ -5,21 +5,21 @@ math.randomseed(os.time()) -- Seed the random number generator.
 local random = math.random(1, 2) -- Create a local random number between 1 and 2.
 
 -- Header components.
-local earth, text = require("alpha.headers").earth, require("alpha.headers").text
+local headers = require("utils.alpha.headers")
 
 -- Functions.
-local colorize_header = require("alpha.functions").colorize_header
+local colorize_header = require("utils.alpha.functions")
 
 -- Color tables.
-local rainbow_earth, rainbow_text = require("alpha.colors").rainbow_earth, require("alpha.colors").rainbow_text
+local palettes = require("utils.alpha.palettes")
 
 -- Set the header based on the random number.
 local header
 
 if random == 1 then -- Just pick one or the other.
-  header = colorize_header(text, rainbow_text) -- And colorize it accordingly.
+  header = colorize_header(headers.text, palettes.rainbow_text) -- And colorize it accordingly.
 else
-  header = colorize_header(earth, rainbow_earth)
+  header = colorize_header(headers.earth, palettes.rainbow_earth)
 end
 
 -- Return the config for the dashboard.

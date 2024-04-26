@@ -53,6 +53,6 @@ local rainbow_text = {
 }
 
 return {
-  rainbow_earth,
-  rainbow_text,
+  rainbow_earth = rainbow_earth,
+  rainbow_text = rainbow_text,
 }

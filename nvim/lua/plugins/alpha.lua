@@ -16,6 +16,7 @@ local palettes = require("utils.alpha.palettes")
 -- Set the header based on the random number.
 local header
 
+-- TODO: Convert to a switch statement if you add more headers.
 if random == 1 then -- Just pick one or the other.
   header = colorize_header(headers.text, palettes.rainbow_text) -- And colorize it accordingly.
 else

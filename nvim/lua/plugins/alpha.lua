@@ -1,9 +1,5 @@
 -- Description: Dashboard plugin configs.
 
--- Set up random number generator.
-math.randomseed(os.time()) -- Seed the random number generator.
-local random = math.random(1, 2) -- Create a local random number between 1 and 2.
-
 -- Header components.
 local headers = require("utils.alpha.headers")
 
@@ -13,14 +9,27 @@ local colorize_header = require("utils.alpha.functions")
 -- Color tables.
 local palettes = require("utils.alpha.palettes")
 
+-- Set up random number generator.
+local number_of_headers = 4 -- Number of headers to choose from.
+math.randomseed(os.time()) -- Seed the random number generator.
+local random = math.random(1, number_of_headers) -- Create a local random within range of number_of_headers.
+
 -- Set the header based on the random number.
 local header
+local upper_padding
 
--- TODO: Convert to a switch statement if you add more headers.
-if random == 1 then -- Just pick one or the other... for now.
-  header = colorize_header(headers.text, palettes.rainbow_text) -- And colorize it accordingly.
-else
+if random == 1 then
+  header = colorize_header(headers.text, palettes.rainbow_text)
+  upper_padding = 8
+elseif random == 2 then
   header = colorize_header(headers.earth, palettes.rainbow_earth)
+  upper_padding = 8
+elseif random == 3 then
+  header = colorize_header(headers.plus_ultra, palettes.rainbow_plus_ultra)
+  upper_padding = 5
+elseif random == 4 then
+  header = colorize_header(headers.pentagram, palettes.rainbow_pentagram)
+  upper_padding = 2
 end
 
 -- Return the config for the dashboard.
@@ -68,7 +77,7 @@ return {
 
     require("alpha").setup({
       layout = {
-        { type = "padding", val = 8 },
+        { type = "padding", val = upper_padding },
         { type = "group", val = header },
         { type = "padding", val = 5 },
         dashboard.section.buttons,

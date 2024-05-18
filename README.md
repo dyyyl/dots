@@ -29,7 +29,7 @@ I'm currently running the following programs:
 - [fd](https://github.com/sharkdp/fd) - All find, no fuzz.
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - `rg`.
 - [delta](https://github.com/dandavison/delta) - Plays well with `bat`.
-- [git](https://git-scm.com/) - Touch grass.
+- [git](https://git-scm.com/) - If you made it this far, touch grass.
 
 ## Why tho?
 

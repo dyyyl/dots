@@ -1,10 +1,8 @@
 -- Check if there are words before cursor.
 local has_words_before = function()
-  if vim.api.nvim_buf_get_option_value(0, "buftype") == "prompt" then -- Ignore prompt buffer.
-    return false
-  end
-  local line, col = unpack(vim.api.nvim_win_get_cursor(0)) -- Get cursor position.
-  return col ~= 0 and vim.api.nvim_buf_get_text(0, line - 1, 0, line - 1, col, {})[1]:match("^%s*$") == nil
+  unpack = unpack or table.unpack
+  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+  return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
 
 -- Bind local references.

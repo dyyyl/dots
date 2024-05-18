@@ -8,6 +8,7 @@ If you wanna take this baby for a spin:
 
 - Please backup your current configuration files (wherever they might live).
 - Clone this repo into your config directory.
+- Keep your arms and legs inside the compartment at all times.
 - Be safe and have fun.
 
 ## HI-TECH

@@ -32,10 +32,12 @@ require("lazy").setup({
     -- Debugging plugins
     { import = "lazyvim.plugins.extras.dap.core" },
     -- Quality of life plugins
+    { import = "lazyvim.plugins.extras.coding.mini-ai" },
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    { import = "lazyvim.plugins.extras.coding.mini-surround" },
     { import = "lazyvim.plugins.extras.coding.copilot" },
-    { import = "lazyvim.plugins.extras.editor.outline" },
-    { import = "lazyvim.plugins.extras.ui.alpha" },
+    { import = "lazyvim.plugins.extras.editor.outline" }, -- Symbol outline
+    { import = "lazyvim.plugins.extras.ui.alpha" }, -- Dashboard override
     -- import/override with your plugins
     { import = "plugins" },
   },

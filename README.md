@@ -18,6 +18,7 @@ Yeah it is.
 I'm currently running the following programs:
 
 - [Alacritty](https://alacritty.org/index.html) - My terminal emulator of choice.
+- [asdf](https://asdf-vm.com/) - Better language runtime version management.
 - [Catppuccin](https://catppuccin.com/) - Soft colours for soft critters.
 - [starship](https://starship.rs/) - Because maintaining your own prompt is ridiculous.
 - [Nerd fonts](https://www.nerdfonts.com/) - Table stakes in the year 20XX.

@@ -30,3 +30,6 @@ if set -q ZELLIJ
 else
     zellij
 end
+
+# asdf
+source /opt/homebrew/opt/asdf/libexec/asdf.fish

@@ -1,6 +1,9 @@
 # Ignore everything by default.
 *
 
+# Not the README file though!
+!README.md
+
 # The gitignore of this repository itself (!)
 !.gitignore
 

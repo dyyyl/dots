@@ -16,20 +16,20 @@ Yeah it is.
 
 I'm currently running the following programs:
 
-- [Alacritty](https://alacritty.org/index.html)
-- [Catppuccin](https://catppuccin.com/)
-- [starship](https://starship.rs/)
-- [Nerd fonts](https://www.nerdfonts.com/)
-- [fish](https://fishshell.com/)
-- [Zellij](https://zellij.dev/)
-- [Neovim](https://neovim.io/)
-- [bottom](https://github.com/ClementTsang/bottom)
-- [bat](https://github.com/sharkdp/bat)
-- [fzf](https://github.com/junegunn/fzf)
-- [fd](https://github.com/sharkdp/fd)
-- [ripgrep](https://github.com/BurntSushi/ripgrep)
-- [delta](https://github.com/dandavison/delta)
-- [git](https://git-scm.com/)
+- [Alacritty](https://alacritty.org/index.html) - My terminal emulator of choice.
+- [Catppuccin](https://catppuccin.com/) - Soft colours for soft critters.
+- [starship](https://starship.rs/) - Because maintaining your own prompt is ridiculous.
+- [Nerd fonts](https://www.nerdfonts.com/) - Table stakes in the year 20XX.
+- [fish](https://fishshell.com/) - As friendly as it is interactive.
+- [Zellij](https://zellij.dev/) - Hear me out on this: it's good actually.
+- [Neovim](https://neovim.io/) - Vimscript where?
+- [bottom](https://github.com/ClementTsang/bottom) - Can't top bottom these days.
+- [bat](https://github.com/sharkdp/bat) - I am legitimately afraid of these animals.
+- [fzf](https://github.com/junegunn/fzf) - Find all things fuzzy.
+- [fd](https://github.com/sharkdp/fd) - All find, no fuzz.
+- [ripgrep](https://github.com/BurntSushi/ripgrep) - `rg`.
+- [delta](https://github.com/dandavison/delta) - Plays well with `bat`.
+- [git](https://git-scm.com/) - Touch grass.
 
 ## Why tho?
 

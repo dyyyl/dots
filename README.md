@@ -39,7 +39,7 @@ More than anything, I hop between devices often and like pulling this
 ball and chain along with me.
 
 Friends are welcome to use, enjoy, and extend. Enemies are welcome to
-high cholesterol and hopefully a terrible day (you know who you are).
+high cholesterol and hopefully a terrible day ([you know who you are](https://www.youtube.com/watch?v=DXSY0aspgKo)).
 
 ## License?
 

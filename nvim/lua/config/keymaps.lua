@@ -19,12 +19,7 @@ local lazydocker = Terminal:new({
 })
 
 -- Register which-key mapping for opening programs
-wk.register({
-  o = {
-    name = "open",
-    d = { "Lazydocker" },
-  },
-}, { prefix = "<leader>" })
+wk.add({ { "<leader>o", group = "open", icon = "󰀵" }, { "<leader>od", desc = "Lazydocker", icon = "󰡨" } })
 
 -- Keymap for lazydocker
 vim.keymap.set("n", "<leader>od", function()

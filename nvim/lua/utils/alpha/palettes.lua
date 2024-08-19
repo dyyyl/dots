@@ -52,30 +52,6 @@ local rainbow_text = {
   catppuccin.mauve,
 }
 
-local rainbow_plus_ultra = {
-  catppuccin.red,
-  catppuccin.red,
-  catppuccin.red,
-  catppuccin.peach,
-  catppuccin.peach,
-  catppuccin.peach,
-  catppuccin.yellow,
-  catppuccin.yellow,
-  catppuccin.yellow,
-  catppuccin.green,
-  catppuccin.green,
-  catppuccin.green,
-  catppuccin.sky,
-  catppuccin.sky,
-  catppuccin.sky,
-  catppuccin.blue,
-  catppuccin.blue,
-  catppuccin.blue,
-  catppuccin.mauve,
-  catppuccin.mauve,
-  catppuccin.mauve,
-}
-
 local rainbow_pentagram = {
   catppuccin.red,
   catppuccin.red,
@@ -115,6 +91,5 @@ local rainbow_pentagram = {
 return {
   rainbow_earth = rainbow_earth,
   rainbow_text = rainbow_text,
-  rainbow_plus_ultra = rainbow_plus_ultra,
   rainbow_pentagram = rainbow_pentagram,
 }

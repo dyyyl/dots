@@ -10,7 +10,7 @@ local colorize_header = require("utils.alpha.functions")
 local palettes = require("utils.alpha.palettes")
 
 -- Set up random number generator.
-local number_of_headers = 4 -- Number of headers to choose from.
+local number_of_headers = 3 -- Number of headers to choose from.
 math.randomseed(os.time()) -- Seed the random number generator.
 local random = math.random(1, number_of_headers) -- Create a local random within range of number_of_headers.
 
@@ -25,9 +25,6 @@ elseif random == 2 then
   header = colorize_header(headers.earth, palettes.rainbow_earth)
   upper_padding = 8
 elseif random == 3 then
-  header = colorize_header(headers.plus_ultra, palettes.rainbow_plus_ultra)
-  upper_padding = 5
-elseif random == 4 then
   header = colorize_header(headers.pentagram, palettes.rainbow_pentagram)
   upper_padding = 2
 end

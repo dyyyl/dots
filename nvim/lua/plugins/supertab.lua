@@ -7,7 +7,6 @@ end
 
 -- Bind local references.
 local cmp = require("cmp")
-local copilot_cmp = require("copilot_cmp")
 
 -- Description: hack to make supertab work with nvim-cmp and copilot_cmp
 return {
@@ -44,44 +43,5 @@ return {
         end, { "i", "s" }),
       })
     end,
-    dependencies = {
-      -- Load copilot-cmp
-      {
-        "zbirenbaum/copilot-cmp",
-
-        -- Dependencies
-        dependencies = "copilot.lua",
-
-        -- Config
-        config = function(_, opts)
-          copilot_cmp.setup(opts)
-
-          -- attach cmp source whenever copilot attaches
-          -- fixes lazy-loading issues with the copilot cmp source
-          LazyVim.lsp.on_attach(function(client)
-            if client.name == "copilot" then
-              copilot_cmp._on_insert_enter({})
-            end
-          end)
-
-          -- Use <Tab> to navigate completion menu.
-          cmp.setup({
-            mapping = {
-              ["<Tab>"] = vim.schedule_wrap(function(fallback) -- Use schedule_wrap to prevent flickering.
-                if cmp.visible() and has_words_before() then -- Only select next item if there are words before cursor.
-                  cmp.select_next_item({ behavior = cmp.SelectBehavior.Select }) -- Select next item.
-                else
-                  fallback() -- Otherwise, fallback to original behavior.
-                end
-              end),
-            },
-            -- https://github.com/hrsh7th/nvim-cmp/issues/209#issuecomment-921635222
-            completion = { -- Patch completion options.
-              completeopt = "menu,menuone,noinsert",
-            },
-          })
-        end,
-      },
-    },
   },
 }

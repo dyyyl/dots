@@ -33,15 +33,17 @@ end
 return {
   "goolord/alpha-nvim",
   event = "VimEnter",
+  enabled = true,
+  init = false,
   opts = function()
     local dashboard = require("alpha.themes.dashboard")
 
     dashboard.section.buttons.val = {
-      dashboard.button("f", " " .. " Find file", "<cmd> Telescope find_files <cr>"),
-      dashboard.button("n", " " .. " New file", "<cmd> ene <BAR> startinsert <cr>"),
-      dashboard.button("r", " " .. " Recent files", "<cmd> Telescope oldfiles <cr>"),
-      dashboard.button("g", " " .. " Find text", "<cmd> Telescope live_grep <cr>"),
-      dashboard.button("c", " " .. " Config", "<cmd> lua require('lazyvim.util').telescope.config_files()() <cr>"),
+      dashboard.button("f", " " .. " Find file", LazyVim.pick()),
+      dashboard.button("n", " " .. " New file", [[<cmd> ene <BAR> startinsert <cr>]]),
+      dashboard.button("r", " " .. " Recent files", LazyVim.pick("oldfiles")),
+      dashboard.button("g", " " .. " Find text", LazyVim.pick("live_grep")),
+      dashboard.button("c", " " .. " Config", LazyVim.pick.config_files()),
       dashboard.button("s", " " .. " Restore Session", [[<cmd> lua require("persistence").load() <cr>]]),
       dashboard.button("x", " " .. " Lazy Extras", "<cmd> LazyExtras <cr>"),
       dashboard.button("l", "󰒲 " .. " Lazy", "<cmd> Lazy <cr>"),
@@ -78,8 +80,27 @@ return {
         { type = "group", val = header },
         { type = "padding", val = 5 },
         dashboard.section.buttons,
+        { type = "padding", val = 5 },
+        dashboard.section.footer,
       },
       opts = dashboard.opts,
+    })
+
+    vim.api.nvim_create_autocmd("User", {
+      once = true,
+      pattern = "LazyVimStarted",
+      callback = function()
+        local stats = require("lazy").stats()
+        local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
+        dashboard.section.footer.val = "⚡ Neovim loaded "
+          .. stats.loaded
+          .. "/"
+          .. stats.count
+          .. " plugins in "
+          .. ms
+          .. "ms"
+        pcall(vim.cmd.AlphaRedraw)
+      end,
     })
   end,
 }

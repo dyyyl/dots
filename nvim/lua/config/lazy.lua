@@ -52,7 +52,6 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.editor.outline" }, -- Symbol outline
     { import = "lazyvim.plugins.extras.editor.illuminate" }, -- Highlight selected
     { import = "lazyvim.plugins.extras.ui.alpha" }, -- Dashboard override
-    { import = "lazyvim.plugins.extras.coding.yanky" }, -- Improved yanking
     -- import/override with your plugins
     { import = "plugins" },
   },

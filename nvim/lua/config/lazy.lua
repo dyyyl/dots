@@ -50,6 +50,7 @@ require("lazy").setup({
     -- Quality of life plugins
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
+    { import = "lazyvim.plugins.extras.coding.neogen" }, -- Documentation generation
     { import = "lazyvim.plugins.extras.editor.outline" }, -- Symbol outline
     { import = "lazyvim.plugins.extras.editor.illuminate" }, -- Highlight selected
     -- import/override with your plugins

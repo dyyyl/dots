@@ -1,6 +1,6 @@
 -- Description: Dashboard plugin configs.
 return {
-  "snacks.nvim",
+  "folke/snacks.nvim",
   opts = {
     dashboard = {
       sections = {
